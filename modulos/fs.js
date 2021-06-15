@@ -22,9 +22,8 @@ function write(route, content, callback){
 function borrar(route, callback){
     fs.unlink(route, callback);
 }
-
-// borrar(__dirname + "/file.txt", console.log);
+// write(__dirname + "/file2.txt", "New Write file", console.log)
+borrar(__dirname + "/file2.txt", console.log);
 
 
 // read(__dirname + "/file.txt", console.log)
-write(__dirname + "/file2.txt", "New Write file", console.log)
